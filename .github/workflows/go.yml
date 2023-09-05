@@ -21,7 +21,7 @@ jobs:
           cache: true
           cache-dependency-path: go.sum
       - name: Run coverage
-        run: cd src/Golang/ ; go test -race -coverprofile=coverage.out -covermode=atomic $(find . -name go.mod | sed "s/go.mod/.../g")
+        run: go test -race -coverprofile=coverage.out -covermode=atomic $(find . -name go.mod | sed "s/go.mod/.../g")
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
         with:
