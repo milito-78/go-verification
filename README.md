@@ -1,6 +1,11 @@
 # Go Verification Code Handler
 This is a package for handling verification codes.
 
+[![go report card](https://goreportcard.com/badge/github.com/milito-78/go-verification "go report card")](https://goreportcard.com/report/github.com/milito-78/go-verification)
+[![test status](https://github.com/milito-78/go-verification/workflows/tests/badge.svg?branch=main "test status")](https://github.com/milito-78/go-verification/actions)
+[![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+[![Go.Dev reference](https://img.shields.io/badge/go.dev-reference-blue?logo=go&logoColor=white)](https://pkg.go.dev/milito-78/go-verification?tab=doc)
+
 If you're tired of writing verification code scenarios for each project like me :joy:,
 you can use this package and avoid the boring task of copying and pasting your codes!
 
