@@ -10,6 +10,12 @@ on:
 jobs:
   testing:
     runs-on: ubuntu-latest
+    services:
+      redis:
+        image: redis
+        ports:
+          - 6379:6379
+        options: --name redis-container
     steps:
       - uses: actions/checkout@v3
         with:
