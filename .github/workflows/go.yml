@@ -1,4 +1,4 @@
-name: Golang (test)
+name: tests
 on:
   push:
     branches:
@@ -17,9 +17,6 @@ jobs:
           - 6379:6379
         options: --name redis-container
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
       - uses: actions/setup-go@v3
         with:
           go-version: '1.20'
